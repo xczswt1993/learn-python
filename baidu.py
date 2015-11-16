@@ -10,3 +10,8 @@ def baidu_tieba(url,begin_page,end_page):
         m = urllib2.urlopen(url+str(i)).read()
         f.write(m)
         f.close()
+bdurl = 'http://tieba.baidu.com/p/4156758767'
+end_page = 2
+begin_page=1
+baidu_tieba(bdurl,begin_page,end_page)
+
